@@ -1,0 +1,568 @@
+html, body {
+	width: 100%;
+	margin: 0px;
+}
+body {
+	background-image: linear-gradient(to top, #ece9e6, #ffffff); 
+}
+h1 {
+	text-align: center;
+	color: #a60707;
+	font-size: 40px;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	background: linear-gradient(#870000, #190a05);
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 60px;
+}
+nav {
+	width: 80%;
+	border: 1px solid black;
+	margin: 80px auto;
+	display: flex;
+}
+.navigators {
+	width: 30%;
+	text-align: center;
+	border-right: 1px solid black;
+}
+.navigators:nth-child(5n) {
+	border-right: none;
+}
+nav a {
+	color: #2441ab;
+	font-size: 20px;
+	text-decoration: none;
+	cursor: pointer;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+a:hover {
+	color: #942323;
+	text-decoration: underline;
+}
+.link {
+	color: #942323;
+	text-decoration: underline;
+}
+p {
+	margin: 80px auto;
+	width: 95%;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size: 23px;
+	text-align: justify;
+}
+h2 {
+	text-align: center;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size: 30px;
+	color: #a60707; 
+	background: linear-gradient(#000000, #e74c3c);
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.image {
+	width: 100%;
+	display: flex;
+	text-align: center;
+	margin-top: 80px;
+}
+.images {
+	width: 35%;
+}
+.img1 {
+	width: 300px;
+	padding-top: 50px;
+}
+.img2 {
+	width: 400px;
+}
+.choco-video {
+	text-align: center;
+	margin-top: 60px;
+}
+hr {
+	border: 1px solid black;
+	border-color: #524144;
+    margin-top: 70px;
+}
+.karta {
+	text-align: center;
+	margin-top: 50px;
+}
+.h22 {
+	margin-top: 50px;
+}
+footer {
+	display: flex;
+	width: 100%;
+	text-align: center;
+	margin-bottom: 50px;
+}
+.footer2 {
+	width: 100%;
+	display: flex;
+}
+.footer3 {
+	width: 33%;
+}
+.footer4 {
+	font-size: 20px;
+	font-weight: bold;
+	font-family: Georgia, 'Times New Roman', Times, serif; 
+}
+.adres {
+	margin-top: 10px;
+	font-size: 18px;
+	font-family: Georgia, 'Times New Roman', Times, serif; 
+}
+.number {
+	margin-top: 10px;
+	font-size: 18px;
+	font-family: Georgia, 'Times New Roman', Times, serif; 
+}
+.number a {
+	text-decoration: none;
+	color: #244596;
+}
+.social {
+	margin-top: 15px;
+}
+.mode {
+	margin-top: 75px;
+	width: 100%;
+	overflow: hidden;
+	text-align: left;
+}
+.springmode {
+    color: #524144;
+    white-space: nowrap;
+    font-size: 25px;
+    width: 100%;
+    padding-left: 100%;
+    display: inline-block;
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    animation: mode 25s infinite linear;
+}
+.springmode:hover {
+	animation-play-state: paused;
+}
+@keyframes mode{
+	0%{transform: translate(0, 0);}
+	100%{transform: translate(-100%, 0);}
+}
+@media screen and (max-width: 320px) 
+{
+    h1 {
+    	font-size: 23px;
+    	margin: 20px auto;
+    }
+    nav {
+    	width: 60%;
+    	flex-direction: column;
+    	margin: 50px auto;
+
+    }
+    .navigators {
+        width: 100%;
+        border-bottom: solid 1px black;
+    }
+    .navigators a {
+    	font-size: 16px;
+    }
+    .navigators:nth-child(5n) {
+	    border-bottom: none; 
+    }
+    p {
+    	font-size: 15px;
+    	margin: 0px auto;
+    }
+    h2 {
+    	font-size: 20px;
+    	margin-left: auto;
+    	margin-right: auto;
+    	margin-top: 35px;
+    }
+    .image {
+    	flex-direction: column;
+    	margin: 0px auto;
+    }
+    .images {
+    	width: 100%;
+    	text-align: center;
+    }
+    .images img {
+    	width: 65%;
+    	height: auto;
+    }
+    .img1 {
+    	margin-top: 15px;
+    	padding: 0px;
+    }
+    .img2 {
+    	margin-top: 15px;
+    }
+    video {
+    	width: 90%;
+    	margin-right: auto;
+    	margin-left: auto;
+    }
+    .mode {
+        margin-top: 50px;
+    }
+    .springmode span {
+    	font-size: 16px;
+    }
+    .karta iframe {
+    	width: 90%;
+
+    }
+    footer {
+    	margin-bottom: 20px;
+    }
+    .footer2 {
+    	flex-direction: column;
+    }
+    .footer3 {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+    }
+    .footer4 {
+    	padding-top: 10;
+    	font-size: 16px;
+    }
+    .adres {
+    	margin-top: 0px;
+    	padding-bottom: 10px;
+    	font-size: 14px;
+    }
+    .number {
+    	margin-top: 0px;
+    	padding-bottom: 10px;
+    	font-size: 14px;
+    }
+    .social {
+    	margin-top: 8px;
+    }
+}
+@media screen and (min-width: 321px) and (max-width: 768px)
+{
+        h1 {
+            font-size: 30px;
+            margin: 20px auto;
+        }
+        nav {
+            width: 60%;
+            flex-direction: column;
+            margin-top: 50px;
+            margin-right: auto;
+            margin-left: auto;
+            margin-bottom: 0px;
+        }
+        .navigators {
+            width: 100%;
+            border-bottom: 1px solid black;
+        }
+        .navigators a {
+            font-size: 17px;
+        }
+        .navigators:nth-child(5) {
+            border-bottom: none;
+        }
+        p {
+            font-size: 16px;
+            margin-top: 50px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 0px;
+        }
+        h2 {
+            margin-top: 50px;
+            font-size: 26px;
+        }
+        .image {
+            flex-direction: column;
+            margin-top: 0px;
+        }
+        .images {
+            width: 100%; 
+        }
+        .images img {
+            width: 50%;
+            height: auto;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        .img1 {
+        	padding-top: 25px;
+        }
+        .img2 {
+            padding-top: 25px;
+        }
+        .choco-video {
+        	margin-top: 50px;
+        }
+        video {
+            width: 80%;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        .mode {
+            margin-top: 50px;
+        }
+        .springmode span {
+            font-size: 18px;
+        }
+        .karta iframe {
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        footer {
+            margin-bottom: 20px;
+        }
+        .footer2 {
+            flex-direction: column;
+        }
+        .footer3 {
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 10px;
+        }
+        .footer4 {
+            padding-top: 10;
+            font-size: 18px;
+        }
+        .adres {
+            margin-top: 0px;
+            padding-bottom: 10px;
+            font-size: 16px;
+        }
+        .number {
+            margin-top: 0px;
+            padding-bottom: 10px;
+            font-size: 16px;
+        }
+        .social {
+            margin-top: 8px;
+        }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px)
+{
+    h1 {
+        font-size: 38px;
+        margin-top: 20px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    nav {
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 70px;
+    }
+    .navigators a {
+        font-size: 18px;    
+    }
+    p {
+    	font-size: 20px;
+    }
+    .image {
+        width: 100%;
+    }
+    .img2 {
+        width: 90%;
+        height: auto;
+    }
+    .img1 {
+        width: 90%;
+        height: auto;
+    }
+    .choco-video {
+        margin-top: 80px;
+    }
+    video {
+        width: 60%;
+    }
+    .springmode span {
+        font-size: 18px;
+    }
+    .karta iframe {
+        width: 90%;
+    }
+    footer {
+        margin-bottom: 20px;
+    }
+    .footer2 {
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .footer4 {
+    	font-size: 17px;
+    }
+    .adres {
+    	font-size: 15px;
+    }
+    .number {
+    	font-size: 15px;
+    }
+}
+@media screen and (min-width: 1025px) and (max-width: 1500px)
+{
+    h1 {
+        font-size: 50px;
+        margin-top: 20px;
+    }
+    nav {
+    	margin-top: 70px;
+    }
+    .navigators a {
+		font-size: 22px;
+	}
+    h2 {
+        font-size: 35px;
+    }
+    .image {
+        width: 100%;
+    }
+    .img1 {
+        width: 80%;
+        height: auto;
+    }
+    .img2 {
+        width: 80%;
+        height: auto;
+    }
+    .choco-video {
+        margin-top: 60px;
+    }
+    video {
+        width: 50%;
+    }
+    .springmode span{
+        font-size: 24px;
+    }
+    .karta iframe {
+        width: 80%;
+    }
+    footer {
+        margin-top: 20px;
+    }
+    .footer4 {
+    	font-size: 23px;
+    }
+    .adres {
+    	font-size: 19px;
+    }
+    .number {
+    	font-size: 19px;
+    }
+}
+@media screen and (min-width: 1501px) and (max-width: 1920px)
+{
+    h1 {
+        font-size: 55px;
+        margin-top: 20px;
+    }
+    nav {
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 70px;
+    }
+    .navigators a {
+        font-size: 25px;
+    }
+    p {
+        font-size: 30px;
+    }
+    h2 {
+        font-size: 40px;
+    }
+    .image {
+        width: 100%;
+    }
+    .img1 {
+        width: 75%;
+        height: auto;
+    }
+    .img2 {
+        width: 75%;
+        height: auto;
+    }
+    video {
+        width: 45%;
+    }
+    .karta iframe {
+        width: 75%;
+    }
+    footer {
+        margin-bottom: 20px;
+    }
+    .footer4 {
+        font-size: 26px;
+    }
+    .adres {
+        font-size: 24px;
+    }
+    .number {
+        font-size: 24px;
+    }
+}
+@media screen and (min-width: 1921px)
+{
+    h1 {
+        font-size: 55px;
+        margin-top: 20px;
+    }
+    nav {
+    	margin-top: 70px;
+    	width: 85%;
+    }
+    .navigators a {
+        font-size: 27px;
+    }
+    p {
+        font-size: 35px;
+    }
+    h2 {
+        font-size: 45px;
+    }
+    .image {
+        width: 100%;
+    }
+    .img1 {
+        width: 85%;
+        height: auto;
+    }
+    .img2 {
+        width: 85%;
+        height: auto;
+    }
+
+    video {
+        width: 50%;
+    }
+    .springmode span{
+        font-size: 30px;
+    }
+    .karta iframe {
+        width: 70%;
+    }
+    footer {
+        margin-bottom: 20px;
+    }
+    .footer4 {
+        font-size: 30px;
+    }
+    .adres {
+        font-size: 26px;
+    }
+    .number {
+        font-size: 26px;
+    }
+}
+
+
